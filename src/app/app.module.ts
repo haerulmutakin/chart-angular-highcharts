@@ -5,14 +5,13 @@ import { ChartModule , HIGHCHARTS_MODULES} from 'angular-highcharts';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import * as exporting from 'highcharts/modules/exporting.src';
 import * as no_data from 'highcharts/modules/no-data-to-display.src';
 import * as highmaps from 'highcharts/modules/map.src';
 import { HttpClientModule } from '@angular/common/http';
 
 
 export function highchartsModules() {
-  return [exporting, no_data, highmaps];
+  return [no_data, highmaps];
 }
 @NgModule({
   declarations: [
